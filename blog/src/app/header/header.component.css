@@ -5,6 +5,8 @@ div {
     justify-content: center; /* Center the links horizontally */
     align-items: center; /* Align items vertically */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative; /* Ensure it stays above other elements */
+    z-index: 1; /* Prevent overlapping issues */
   }
   
   /* Style the links */
@@ -12,11 +14,13 @@ div {
     color: white; /* White text color */
     text-decoration: none; /* Remove underline */
     font-weight: bold; /* Bold font for emphasis */
-    margin: 0 1rem; /* Spacing between links */
+    margin: 0 0.5rem; /* Add spacing between links */
     padding: 0.5rem 1rem; /* Padding for button-like feel */
-    border: 2px solid transparent; /* Add border for hover effect */
+    border: 2px solid transparent; /* Border for hover effect */
     border-radius: 5px; /* Rounded edges for a button-like look */
+    background-color: transparent; /* Transparent background */
     transition: all 0.3s ease; /* Smooth transitions */
+    cursor: pointer; /* Ensure pointer cursor for interactivity */
   }
   
   /* Hover effect for links */
