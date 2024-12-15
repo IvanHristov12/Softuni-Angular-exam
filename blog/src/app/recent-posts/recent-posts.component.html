@@ -1,0 +1,13 @@
+<div class="recent-posts">
+    <h2>Recent Posts</h2>
+    <br>
+    <div class="posts-grid">
+      <div *ngFor="let post of posts" class="post-card">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.content }}</p>
+        <p><strong>Author:</strong> {{ post.author }}</p> <!-- Display author here -->
+        <a routerLink="/post/{{ post.id }}">Read More</a>
+      </div>
+    </div>
+  </div>
+  

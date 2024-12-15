@@ -1,0 +1,42 @@
+.recent-posts {
+    text-align: center;
+  }
+  
+  .posts-grid {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers the cards horizontally */
+    flex-wrap: wrap; /* Allows wrapping if screen is small */
+    gap: 1rem; /* Adds space between cards */
+  }
+  
+  .post-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    width: 300px; /* Fixed width for each card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .post-card p {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .post-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .post-card a:hover {
+    text-decoration: underline;
+  }
+  
