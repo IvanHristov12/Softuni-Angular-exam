@@ -1,1 +1,30 @@
-<p>post-details works!</p>
+<div class="post-details-container" *ngIf="post; else loading">
+    <div class="post-details-card">
+        <!-- Post Title -->
+        <h1 class="post-title">{{ post?.title }}</h1>
+        <hr />
+
+        <!-- Post Content -->
+        <div class="post-content">
+            <p>{{ post?.content }}</p>
+        </div>
+
+        <!-- Post Author -->
+        <div class="post-author">
+            <strong>Author:</strong> <span>{{ post?.author }}</span>
+        </div>
+    </div>
+</div>
+
+<!-- Buttons -->
+<div class="post-actions">
+    <button class="edit-btn">Edit</button>
+    <button class="delete-btn">Delete</button>
+</div>
+
+<!-- Loading State -->
+<ng-template #loading>
+    <div class="loading">
+        <p>Loading post details...</p>
+    </div>
+</ng-template>

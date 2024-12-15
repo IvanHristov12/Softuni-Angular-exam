@@ -33,7 +33,20 @@ export class FirebasePostService {
         );
     }
 
-
+    getPostById(postId: string): Observable<{ id: string; title: string; content: string; author: string } | null> {
+        const postRef = ref(this.db, `Posts/${postId}`);
+        return from(get(postRef)).pipe(
+            map((snapshot: any) => {
+                if (snapshot.exists()) {
+                    return {
+                        id: postId,
+                        ...(snapshot.val() as { title: string; content: string; author: string }),
+                    };
+                }
+                return null; // Return null if the post doesn't exist
+            })
+        );
+    }
 
     // Update Post: Updates a specific post by ID
     updatePost(postId: string, title: string, content: string): Observable<void> {

@@ -1,0 +1,93 @@
+/* General Container */
+.post-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    padding-top: 250px;
+}
+
+/* Post Card */
+.post-details-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Post Title */
+.post-title {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Horizontal Line */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 1rem 0;
+}
+
+/* Post Content */
+.post-content {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Post Author */
+.post-author {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.post-author strong {
+    color: #333;
+}
+
+/* Buttons */
+.post-actions {
+    display: flex;
+    justify-content: center;
+    /* Center buttons horizontally */
+    gap: 1rem;
+    /* Adds spacing between buttons */
+    margin-top: 2rem;
+    /* Adds space above the buttons */
+}
+
+.post-actions .edit-btn,
+.post-actions .delete-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.post-actions .delete-btn {
+    background-color: #dc3545;
+}
+
+.post-actions .edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.post-actions .delete-btn:hover {
+    background-color: #c82333;
+}
