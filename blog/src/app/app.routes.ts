@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { PostDetailsComponent } from './post-details/post-details.component';
+import { PostsComponent } from './posts/posts.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -12,4 +13,5 @@ export const routes: Routes = [
     { path: "login", component: LoginComponent },
     { path: "register", component: RegisterComponent },
     { path: "post/:id", component: PostDetailsComponent },
+    { path: "posts", component: PostsComponent  },
 ];
